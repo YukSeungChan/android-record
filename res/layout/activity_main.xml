@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="250dp">
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:id="@+id/ib_play" android:src="@drawable/btn_play" android:background="#00000000"
+                         android:cropToPadding="true" android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal|bottom"
+                >
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/iv_record_text"
+                       android:src="@drawable/txt_record" android:layout_gravity="center_horizontal"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/iv_arrow"
+                       android:src="@drawable/arrow" android:layout_gravity="center_horizontal"/>
+            <SeekBar android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/seekBar"
+                     android:background="@drawable/record_bg" android:thumb="@drawable/record_pointer"
+                     android:visibility="gone" android:progressDrawable="@drawable/trans"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#00000000"
+                         android:id="@+id/ib_record" android:src="@drawable/btn_record_selector"
+                         android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
